@@ -53,7 +53,7 @@ public class gui extends Application {
 
                 grid.getChildren().addAll(readlabel1, readbutton1, updatelabel2, updatebutton2, readerslabel, readersinput, writerslabel, writersinput, progress, progressBar);
                 Scene scene = new Scene(grid, 500.0, 400.0);
-                scene.getStylesheets().add("demofx/src/main/java/com/example/demofx/style.css");
+                scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());//lazem a7otaha gowa el resources
                 stage.setScene(scene);
                 stage.show();
             }
